@@ -1,10 +1,17 @@
 * {
   padding: 10px;
   margin: 10px;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+body {
+  background: url("https://cms.splendidtable.org/sites/default/files/styles/lede_image/public/165174987.jpg?itok=nEZrfdhH");
+  background-repeat: no-repeat;
+  background-size: 200vh;
 }
 
 .trip {
-  font-family: 'Open Sans Condensed', sans-serif;
   overflow: auto;
   display: grid;
   grid-template-areas: "header header header"
@@ -15,15 +22,12 @@
 }
 
 .cell1 {
-  background-image: url("https://cms.splendidtable.org/sites/default/files/styles/lede_image/public/165174987.jpg?itok=nEZrfdhH");
-  background-size: 200vh;
-  width: 100%;
-  height: auto;
   grid-area: header;
 }
 
 button {
   border-radius: 2rem;
+  opacity: 0.5;
 }
 
 .navigation {
@@ -77,6 +81,7 @@ button {
 
 .cell3 {
   background: white;
+  opacity: 0.8;
   grid-area: main;
 }
 
@@ -88,24 +93,16 @@ button {
 }
 
 .cell5 {
-  background-image: url("https://4.bp.blogspot.com/-ZN1Ma2uNp9U/USUSzFgjYtI/AAAAAAAAK38/N244IzxbZP8/s1600/Caribbean_atlantic_meet_4.jpg");
-  background-size: 175vh;
   grid-area: footer;
 }
 
 .trip, h1 {
-  font-size: 20vh;
+  font-size: 5vh;
 }
 
 .trip, h2 {
   font-size: 16px;
-  background: grey;
   color: white;
-}
-
-ul {
-  font-size: 1rem;
-  color: #b3ffb3;
 }
 
 .hope {
@@ -117,4 +114,20 @@ ul {
   position: absolute;
   bottom: 1%;
   left: 85%;
+}
+
+h1 {
+  color: black;
+}
+
+h3 {
+  color: darkgrey;
+}
+
+h4 {
+  color: black;
+}
+
+ul {
+  list-style: none;
 }
