@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+body {
+  background: url(https://sleeplessblog.files.wordpress.com/2015/01/fotolia_41906528_subscription_monthly_l.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.trip {
+  overflow: hidden;
+  display: inline-grid;
+  grid-template-areas: "header header header"
+  "left main right"
+  "footer footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.cell1 {
+  grid-area: header;
+}
+
+.nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.cell2 {
+  grid-area: right;
+}
+
+.cell3 {
+  grid-area: main;
+}
+
+section {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  font-size: 5rem;
+  color: green;
+}
+
+.cell4 {
+  grid-area: left;
+}
+
+.cell5 {
+  grid-area: footer;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3.);
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: .25;
+}
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
